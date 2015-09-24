@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="ScrollToElementWidget.widget.ScrollToElementWidget" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>ScrollToElementWidget</name>
+  <description>Scroll element into view when attribute value was changed.</description>
+
+  <icon></icon>
+
+  <properties>
+        <property key="classToSearch" type="string">
+            <caption>Class to search</caption>
+            <category>Configuration</category>
+            <description>The widget will scroll the element into view with this class and the attribute value.</description>
+        </property>      
+        <property key="listenToAttr" type="attribute">
+            <caption>Listen to attr</caption>
+            <category>Configuration</category>
+            <description>The attribute to listen to. If the value changes, the widget will scroll the element into view that has the value and the specified class.</description>
+            <attributeTypes>
+                <attributeType name="AutoNumber"/>
+                <attributeType name="Boolean"/>
+                <attributeType name="Enum"/>
+                <attributeType name="Integer"/>
+                <attributeType name="Long"/>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="delay" type="integer" required="true" defaultValue="0">
+            <caption>Delay before setting focus</caption>
+            <category>Configuration</category>
+            <description>With large pages, loading all elements can take some time. Use the delay if necessary</description>
+        </property>
+	</properties>
+</widget>
+
