@@ -21,6 +21,7 @@
                 <attributeType name="Enum"/>
                 <attributeType name="Integer"/>
                 <attributeType name="Long"/>
+                <attributeType name="Decimal"/>
                 <attributeType name="String"/>
             </attributeTypes>
         </property>
